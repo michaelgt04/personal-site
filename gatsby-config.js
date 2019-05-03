@@ -74,5 +74,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        headers: {
+          "/*": ["Referrer-Policy: same-origin"],
+        },
+      },
+    },
   ],
 }
