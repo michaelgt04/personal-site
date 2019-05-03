@@ -35,6 +35,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        { name: "referrer", content: "same-origin" },
         {
           name: `description`,
           content: metaDescription,
